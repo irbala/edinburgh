@@ -1,0 +1,131 @@
+ /* Apply the default font family */
+      body {
+        font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
+        padding-top: 60px;
+      }
+
+      /* Define background styles as reusable classes using local images */
+      .hero-image {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.4) 0%,
+            rgba(0, 0, 0, 0) 25%
+          ),
+          url("https://lh3.googleusercontent.com/aida-public/AB6AXuCo27u0XcJ-aPnFOAO6HVsK2wkV5umVOQEQ0lgd5yXo9KLMVqqz9QqB_OHTJudZ6P2gXXXVoC4xtWa4fKO6dgGkz-UgNhYqSxvVhbtnK9iLPVRlpIfQwc79pRC_2_svyGm0Ht_D5vw9FNJ9HPBjp9Nt6MNiiCPlXAnpn7IY4kkykMOdhjI-sghiotQxGxIWdcJpwFQ7Kq3yjEpfES5zB7Zfiwx6ci-TLWE_5qVYWRaEzswnJfZk8uO2wB97EKRlMU9mPFSLZwo4g5s-");
+        /* Ensure background properties are set */
+        background-size: cover;
+        background-position: center;
+      }
+
+      /* Navigation Styles */
+      /* Added margin-top to body content to prevent overlap */
+      body {
+        margin-top: 50px; /* Adjust based on nav height */
+        text-align: center;
+      }
+      nav {
+        /* Add a subtle shadow for better visibility when sticky */
+        /* Ensure nav takes full width */
+        width: 100%;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        /* Allows horizontal scrolling if items overflow */
+        overflow-x: auto;
+        /* Hides scrollbar for cleaner look (optional) */
+        scrollbar-width: none; /* Firefox */
+        border-bottom: 1px solid rgba(216, 216, 216, 0.5);
+
+      }
+      nav ul::-webkit-scrollbar {
+        /* Chrome, Safari, Edge */
+        display: none;
+        
+      }
+      nav li {
+        flex: 0 0 auto; /* Don't grow, don't shrink, base on content width */
+        border-left: 1px solid rgba(216, 216, 216, 0.5);
+        
+      }
+      nav a {
+        display: block;
+        padding: 0.5rem 1rem; /* py-2 px-4 equivalent */
+        color: #8a8c8f; /* Tailwind gray-700 */
+        text-decoration: none;
+        font-weight: 500; /* Medium */
+        white-space: nowrap; /* Prevent text wrapping */
+        transition: background-color 0.2s ease, color 0.2s ease; /* Smooth transition */
+      }
+      nav a:hover,
+      nav a:focus {
+        background-color: #e2e8f0; /* Tailwind gray-200 */
+        color: #1a202c; /* Tailwind gray-900 */
+        outline: 2px solid transparent; /* For focus visibility */
+        outline-offset: 2px;
+      }
+      .section-target {
+        scroll-margin-top: 60px; /* Adjust based on actual nav height */
+        border-radius: 0.25rem; /* rounded-sm */
+        padding-top: 0.5rem; /* pt-2 */
+        padding-bottom: 0.5rem; /* pb-2 */
+      }
+
+      #coffee {
+        color: #ffffff;
+        background-color: #716d5a; 
+        padding: 10px; /* Add padding for better spacing */;
+        border-radius: 0.25rem; /* rounded-sm */
+        box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+
+        }
+
+             #Food {
+       color: #ffffff;
+        background-color: #c1ac9e; 
+        padding: 10px; /* Add padding for better spacing */;
+        border-radius: 0.25rem; /* rounded-sm */
+        box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+        }
+
+             #activities  {
+        color: #ffffff;
+        background-color: #394948; 
+        padding: 10px; /* Add padding for better spacing */;
+        border-radius: 0.25rem; /* rounded-sm */
+        box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        #Nature {
+       color: #ffffff;
+        background-color: #829342; 
+        padding: 10px; /* Add padding for better spacing */;
+        border-radius: 0.25rem; /* rounded-sm */
+        box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+        }
+
+      /* Style for the place lists */
+      .place-list {
+        text-align: left;
+        background-color: #ffffff;
+        border-radius: 15px 15px 5px 5px; /* rounded-sm */
+        margin: 20px;
+      }
+      .place-list img {
+        border-radius: 15px 15px 0 0; /* rounded-sm */
+        width: 100%; /* Make images responsive */
+      }
+
+        .place-list ul {
+            list-style: none; /* Remove default list styles */
+        }
+
+      .place-list li {
+        background-color: #e7e7e7; /* Tailwind gray-100 */
+        border: #cfcfcf 1px solid; /* gray-900 for border */
+        padding: 0.5rem; /* py-2 equivalent for padding */
+        border-radius: 0.25rem; /* rounded-sm for list items */
+        margin: 10px; /* mt-2 equivalent for spacing between items */
+        color: #334155; /* slate-700 for text */
+      }

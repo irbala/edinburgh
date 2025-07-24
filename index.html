@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edinburgh</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <!-- Corrected extra spaces -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      rel="stylesheet"
+      href="style.css"/>
+
+    <!-- Tailwind CSS CDN -->
+    <!-- Corrected extra spaces -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+
+  </head>
+  <body>
+    <!-- Navigation Bar - Moved outside the main content div and made fixed -->
+    <!-- Using 'fixed' instead of 'sticky' as it's more reliable for viewport pinning -->
+    <nav class="px-4 py-2 fixed top-0 left-0 right-0 bg-white z-50">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#coffee">Coffee</a></li>
+        <li><a href="#Food">Food</a></li>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#Nature">Nature</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="relative flex size-full min-h-screen flex-col bg-white justify-between group/design-root overflow-x-hidden">
+      <div>
+        <div class="@container">
+          <div class="@[480px]:px-4 @[480px]:py-3">
+            <!-- Hero Image Section -->
+            <div class="bg-cover bg-center flex flex-col justify-end overflow-hidden bg-white @[480px]:rounded-lg min-h-80 hero-image">
+              <div class="flex p-4">
+                <p class="text-white tracking-light text-[28px] font-bold leading-tight">
+                  Edinburgh 🏴󠁧󠁢󠁳󠁣󠁴󠁿 ادنبرة
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vertical List of Sections -->
+        <!-- Added pt-4 to give some space below the fixed nav area -->
+        <div class="flex flex-col gap-6 p-4 pt-4">
+
+               <!-- Coffee Section -->
+          <div id="coffee" class="section-target flex flex-col gap-3">
+            <h3 class="text-xl font-bold ">Coffee & Sweets</h3>
+            <h3 class="text-xl font-bold">كوفي وحلى</h3>
+            <div class="place-list">
+            <img src="https://i.pinimg.com/736x/14/70/ac/1470acb976b0a59adc7309816ecd8a04.jpg"/>
+            <ul>
+                <li><a href="https://maps.app.goo.gl/FEVZ8QKWJkBcfp8P9">Moo Pie Gelato</a></li>
+                <li><a href="https://maps.app.goo.gl/hKenXpHEyzBwZoDW9">Mary's Milk Bar</a></li>
+                <li><a href="https://maps.app.goo.gl/x6Wevf3YrTXM3ns76">Blank Street</a></li>
+                <li><a href="https://maps.app.goo.gl/vsVxRHPPxkGu2e6fA">Brew Lab Coffee</a></li>
+                <li><a href="https://maps.app.goo.gl/fWW1TC4hnxXDMM7KA">The Artisan Roast</a></li>
+                <li><a href="https://maps.app.goo.gl/UKN6XSXWbxb1JJox8">Waterstone</a></li>
+                <li><a href="https://maps.app.goo.gl/g7UccRgW4C7oCyHe6">The Willow Tearooms</a></li>
+                <li><a href="https://maps.app.goo.gl/vc5StE8nuB3TupP47">Fudge Kitchen Ltd.</a></li>
+                <li><a href="https://maps.app.goo.gl/hGPYGL26nfCBSDNB6">The Barantine</a></li>
+                <li><a href="https://maps.app.goo.gl/2C43kfFt36YLmLa3A">Knoops</a></li>
+                <li><a href="https://maps.app.goo.gl/yLCZtZQdFJfFdLxD7">The Source</a></li>
+                <li><a href="https://maps.app.goo.gl/eMno9f2R67h6Kjox5">Origin</a></li>
+                <li><a href="https://maps.app.goo.gl/hoMExFkkfKDsbVQj6">Cappuccino</a></li>
+                <li><a href="https://maps.app.goo.gl/w4FvjZgTD1t6Qt9Z6">Soft Core</a></li>
+                <li><a href="https://maps.app.goo.gl/WFpogveVg5i1F8yBA">Chulo's Stuffed Cookies</a></li>
+              </ul>
+              </div>
+          </div>
+
+          
+          <!-- Food Section -->
+          <div id="Food" class="section-target flex flex-col gap-3">
+            <h3 class="text-xl font-bold">Food</h3>
+            <h3 class="text-xl font-bold">الاكل</h3>
+            <div class="place-list">
+            <img src="https://i.pinimg.com/736x/71/8c/70/718c707f51c5ae28100d961d8e31dde6.jpg"/>
+            <ul>
+              <li>Dishoom</li>
+              <li>Franco Manca</li>
+              <li>Lannan Bakery</li>
+              <li>Beefbar</li>
+              <li>Sushisamba</li>
+              <li>Fat Hippo</li>
+              <li>The Ivy</li>
+              <li>Portobello</li>
+              <li>Gordon Ramsay Street Burger</li>
+              <li>Civerino's Slice</li>
+              <li>Black Bull</li>
+              <li>The Witchery by the Castle</li>
+              <li>Angels with Bagpipes</li>
+              <li>Fhior Restaurant</li>
+              <li>The Elephant House</li>
+              <li>The Spence</li>
+              <li>Little Lardar</li>
+              <li>Society</li>
+              <li>Duck & Waffle</li>
+              <li>Laila</li>
+              <li>o'Oliviero</li>
+            </ul>
+            </div>
+          </div>
+
+     
+
+          <!-- Activities Section -->
+          <div id="activities" class="section-target flex flex-col gap-3">
+            <h3 class="text-xl font-bold">Activities & Shopping</h3>
+            <h3 class="text-xl font-bold">تسوق وفعاليات</h3>
+            <div class="place-list">
+            <img src="https://i.pinimg.com/736x/53/c6/f3/53c6f3d8b3c512224091e4402a0d7c4f.jpg"/>
+            <ul>
+              <li>The Enchanted Galaxy</li>
+              <li>House of Treasure</li>
+              <li>Castle Gifts</li>
+              <li>Princes Street</li>
+              <li>Royal Mile Exploration</li>
+              <li>Royal Mile Factory Outlet</li>              
+              <li>Edinburgh Castle</li>
+              <li>Grassmarket</li>
+              <li>Uniqlo</li>
+              <li>Dean Village</li>
+              <li>Home</li>
+              <li>Victoria Street</li>
+              <li>Arthur's Seat Hike</li>
+              <li>Prince Street</li>
+              <li>Waterstone</li>
+              <li>Napiers 1860</li>
+              <li>Black Moon</li>
+              <li>Scribbler</li>
+              <li>Cookie</li>
+              <li>The Edinburgh Dungeon</li>
+              <li>Camera Obscura</li>
+              <li>Handbag Heaven</li>
+            </ul>
+            </div>
+          </div>
+
+          <!-- Nature Section -->
+          <div id="Nature" class="section-target flex flex-col gap-3">
+            <h3 class="text-xl font-bold">Nature</h3>
+            <h3 class="text-xl font-bold">طبيعة وتمشية</h3>
+            <div class="place-list">
+           <img src="https://i.pinimg.com/736x/3d/14/bc/3d14bcee3734a2f5b155558e97c74028.jpg"/>
+            <ul>
+              <li>Prince Street Gardens</li>
+              <li>Meadow Park</li>
+              <li>Arthur's Seat</li>
+              <li>Calton Hill</li> 
+              <li>Botanic Gardens</li>
+              <li>Portobello Beach</li>
+              <li>Water of Leith Walkway</li>
+              <li>Holyrood Park</li>
+              <li>Inverleith Park</li>
+              <li>Loch Lomond Day Trip</li>
+              <li>Fife Coastal Tour</li>
+              <li>Highland Safari Adventure</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Section --> 
+    <footer class="bg-gray-800 text-white text-center py-4">
+      <p class="text-sm">+44 20 7917 3000</p>
+ <p class="text-sm">Royal Embassy of Saudi Arabia, London, Primary phone</p>
+      <p class="text-sm">© 2025 Edinburgh Trip. Fay Alabri.</p>  
+    </footer>
+  </body>
+</html>
