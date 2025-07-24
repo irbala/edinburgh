@@ -2,6 +2,8 @@
 
 This project is a simple, visually appealing travel guide for Edinburgh, designed to help users explore the city's best coffee shops, food spots, activities, and natural attractions. The website provides a categorized list of places with links (where applicable) and images.
 
+Link: https://irbala.github.io/edinburgh/
+
 ## Features
 
 1. **Categories**:
