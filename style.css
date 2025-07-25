@@ -1,7 +1,9 @@
- /* Apply the default font family */
+ /* Apply the default font family and navigation spacing */
       body {
         font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
         padding-top: 60px;
+        margin-top: 50px; /* Adjust based on nav height */
+        text-align: center;
       }
 
       /* Define background styles as reusable classes using local images */
@@ -19,10 +21,6 @@
 
       /* Navigation Styles */
       /* Added margin-top to body content to prevent overlap */
-      body {
-        margin-top: 50px; /* Adjust based on nav height */
-        text-align: center;
-      }
       nav {
         /* Add a subtle shadow for better visibility when sticky */
         /* Ensure nav takes full width */
@@ -46,12 +44,11 @@
       }
       nav li {
         flex: 0 0 auto; /* Don't grow, don't shrink, base on content width */
-        border-left: 1px solid rgba(216, 216, 216, 0.5);
-        
       }
       nav a {
+        border-left: #f1f1f1 1px solid; /* Tailwind gray-900 */
         display: block;
-        padding: 0.5rem 1rem; /* py-2 px-4 equivalent */
+        padding: 0.41rem; /* py-2 px-4 equivalent */
         color: #8a8c8f; /* Tailwind gray-700 */
         text-decoration: none;
         font-weight: 500; /* Medium */
@@ -75,16 +72,16 @@
       #coffee {
         color: #ffffff;
         background-color: #716d5a; 
-        padding: 10px; /* Add padding for better spacing */;
+        padding: 10px; /* Add padding for better spacing */
         border-radius: 0.25rem; /* rounded-sm */
-        box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+        padding: 10px; /* Add padding for better spacing */
 
         }
 
              #Food {
        color: #ffffff;
         background-color: #c1ac9e; 
-        padding: 10px; /* Add padding for better spacing */;
+        padding: 10px; /* Add padding for better spacing */
         border-radius: 0.25rem; /* rounded-sm */
         box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
         }
@@ -92,7 +89,7 @@
              #activities  {
         color: #ffffff;
         background-color: #394948; 
-        padding: 10px; /* Add padding for better spacing */;
+        padding: 10px; /* Add padding for better spacing */
         border-radius: 0.25rem; /* rounded-sm */
         box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
         }
@@ -100,7 +97,7 @@
         #Nature {
        color: #ffffff;
         background-color: #829342; 
-        padding: 10px; /* Add padding for better spacing */;
+        padding: 10px; /* Add padding for better spacing */
         border-radius: 0.25rem; /* rounded-sm */
         box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
         }
