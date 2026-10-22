@@ -1,25 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Edinburgh</title>
-    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico" /> -->
-    <!-- Corrected extra spaces -->
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link
       rel="stylesheet"
       href="style.css"/>
 
-    <!-- Tailwind CSS CDN -->
-    <!-- Corrected extra spaces -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Tailwind (compiled, see README) -->
+    <link rel="stylesheet" href="tailwind.css" />
 
 
   </head>
   <body>
-    <!-- Navigation Bar - Moved outside the main content div and made fixed -->
-    <!-- Using 'fixed' instead of 'sticky' as it's more reliable for viewport pinning -->
+    <!-- Navigation Bar -->
     <nav class="px-4 py-2 fixed top-0 left-0 right-0 bg-white z-50">
       <ul>
         <li><a href="#">Home</a></li>
@@ -38,16 +34,15 @@
             <!-- Hero Image Section -->
             <div class="bg-cover bg-center flex flex-col justify-end overflow-hidden bg-white @[480px]:rounded-lg min-h-80 hero-image">
               <div class="flex p-4">
-                <p class="text-white tracking-light text-[28px] font-bold leading-tight">
+                <h1 class="text-white tracking-light text-[28px] font-bold leading-tight">
                   Edinburgh 🏴󠁧󠁢󠁳󠁣󠁴󠁿 ادنبرة
-                </p>
+                </h1>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Vertical List of Sections -->
-        <!-- Added pt-4 to give some space below the fixed nav area -->
         <div class="flex flex-col gap-6 p-4 pt-4">
 
                <!-- Coffee Section -->
@@ -55,8 +50,8 @@
             <h3 class="text-xl font-bold ">Coffee & Sweets</h3>
             <h3 class="text-xl font-bold">كوفي وحلى</h3>
             <div class="place-list">
-            <img src="https://i.pinimg.com/736x/14/70/ac/1470acb976b0a59adc7309816ecd8a04.jpg"/>
-            <p style="color: black; text-align: center;">اضغطوا الاماكن ويوديكم قوقل ماب عشان تشوفون الصور</p>
+            <img src="https://i.pinimg.com/736x/14/70/ac/1470acb976b0a59adc7309816ecd8a04.jpg" alt="Coffee and sweets in Edinburgh"/>
+            <p class="list-note">اضغطوا الاماكن ويوديكم قوقل ماب عشان تشوفون الصور</p>
             <ul>
                 <li><a href="https://maps.app.goo.gl/FEVZ8QKWJkBcfp8P9">Moo Pie Gelato - ايسكريم</a></li>
                 <li><a href="https://maps.app.goo.gl/hKenXpHEyzBwZoDW9">Mary's Milk Bar - ايسكريم</a></li>
@@ -64,7 +59,7 @@
                 <li><a href="https://maps.app.goo.gl/x6Wevf3YrTXM3ns76">Blank Street - قهوه</a></li>
                 <li><a href="https://maps.app.goo.gl/vsVxRHPPxkGu2e6fA">Brew Lab Coffee - قهوه</a></li>
                 <li><a href="https://maps.app.goo.gl/fWW1TC4hnxXDMM7KA">The Artisan Roast قهوه</a></li>
-                <li><a href="https://maps.app.goo.gl/UKN6XSXWbxb1JJox8">Waterstone - كوفي مطل</a></li>
+                <li><a href="https://maps.app.goo.gl/UKN6XSXWbxb1JJox8">Waterstones - كوفي مطل</a></li>
                 <li><a href="https://maps.app.goo.gl/g7UccRgW4C7oCyHe6">The Willow Tearooms - محل شاهي مطل</a></li>
                 <li><a href="https://maps.app.goo.gl/vc5StE8nuB3TupP47">Fudge Kitchen Ltd - حلى حلو ورخيص</a></li>
                 <li><a href="https://maps.app.goo.gl/48HP894MCCMVoVco9">The Barantine - حلى</a></li>
@@ -83,8 +78,8 @@
             <h3 class="text-xl font-bold">Food</h3>
             <h3 class="text-xl font-bold">الاكل</h3>
             <div class="place-list">
-            <img src="https://i.pinimg.com/736x/71/8c/70/718c707f51c5ae28100d961d8e31dde6.jpg"/>
-            <p style="color: black; text-align: center;">اضغطوا الاماكن ويوديكم قوقل ماب عشان تشوفون الصور</p>
+            <img src="https://i.pinimg.com/736x/71/8c/70/718c707f51c5ae28100d961d8e31dde6.jpg" alt="Food in Edinburgh"/>
+            <p class="list-note">اضغطوا الاماكن ويوديكم قوقل ماب عشان تشوفون الصور</p>
             <ul>
                 <li><a href="https://maps.app.goo.gl/F7kE7hRWQzC1RRKD9">Dishoom - مطعم هندي</a></li>
                 <li><a href="https://maps.app.goo.gl/zG4vbYPPwedQZ1oF7">Franco Manca - مطعم ايطالي لذيذ</a></li>
@@ -111,25 +106,24 @@
             <h3 class="text-xl font-bold">Activities & Shopping</h3>
             <h3 class="text-xl font-bold">تسوق وفعاليات</h3>
             <div class="place-list">
-            <img src="https://i.pinimg.com/736x/53/c6/f3/53c6f3d8b3c512224091e4402a0d7c4f.jpg"/>
-            <p style="color: black; text-align: center;">اضغطوا الاماكن ويوديكم قوقل ماب عشان تشوفون الصور</p>
+            <img src="https://i.pinimg.com/736x/53/c6/f3/53c6f3d8b3c512224091e4402a0d7c4f.jpg" alt="Shopping streets in Edinburgh"/>
+            <p class="list-note">اضغطوا الاماكن ويوديكم قوقل ماب عشان تشوفون الصور</p>
             <ul>
               <li><a href="https://maps.app.goo.gl/mRT24MXwXp7E6npC6">Victoria Street - شارع الالوان</a></li>
               <li><a href="https://maps.app.goo.gl/svDKMFyjgfghYziYA">Princes Street - شارع مهم ضروري نروح</a></li>
               <li><a href="https://maps.app.goo.gl/R6UTNFpc52FVtG5r7">Royal Mile Exploration - شارع للتمشية</a></li>
               <li><a href="https://maps.app.goo.gl/H25KAhc912YAQYxU7">Edinburgh Castle - قصر ادنبره</a></li>
               <li><a href="https://maps.app.goo.gl/PFyZsP49zC6ZqLHe9">Grassmarket - شارع حلو فيه كوفيات</a></li>
-              <li><a href="https://maps.app.goo.gl/svDKMFyjgfghYziYA">Prince Street - شارع للتمشية</a></li>
               <li><a href="https://maps.app.goo.gl/J5CkEn4FuRhNfPbt5">The Edinburgh Dungeon - بيت رعب</a></li>
               <li><a href="https://maps.app.goo.gl/7FCTx8AnFF5NYiVj8">Camera Obscura - متحف العجائب</a></li>
               </ul>
-              <p style="color: black; text-align: center;">اماكن الشوبنق</p>
+              <p class="list-note">اماكن الشوبنق</p>
               <ul>
               <li><a href="https://maps.app.goo.gl/gY3qsKT3842CghMB7">The Enchanted Galaxy - هاري بوتر</a></li>
               <li><a href="https://maps.app.goo.gl/sRR9QRNV779aBUfW6">House of Treasure - هاري بوتر</a></li>
               <li><a href="https://maps.app.goo.gl/YwH6XcLtZ8Pq27Wn7">Uniqlo - محل ملابس يمدحونه</a></li>
               <li><a href="https://maps.app.goo.gl/UFDxhyB8xWvDvuAw5">Royal Mile Factory Outlet - اوتليت بريطاني</a></li>
-              <li><a href="https://maps.app.goo.gl/znxPn6Gbt1z66rPa8">Waterstone - مكتبة وكوفي حلوه للهدايا</a></li>
+              <li><a href="https://maps.app.goo.gl/znxPn6Gbt1z66rPa8">Waterstones - مكتبة وكوفي حلوه للهدايا</a></li>
               <li><a href="https://maps.app.goo.gl/PW6RmDpNRBZBePyw6">Napiers 1860 - محل شعبي قديم</a></li>
               <li><a href="https://maps.app.goo.gl/J13ZHz4GHQicJBoE8">Black Moon - محل شموع وصوابين</a></li>
               <li><a href="https://maps.app.goo.gl/fN5VvwPrjW23jx2WA">Scribbler - محل بطايق</a></li>
@@ -144,11 +138,11 @@
             <h3 class="text-xl font-bold">Nature</h3>
             <h3 class="text-xl font-bold">طبيعة وتمشية</h3>
             <div class="place-list">
-            <img src="https://i.pinimg.com/736x/3d/14/bc/3d14bcee3734a2f5b155558e97c74028.jpg"/>
-            <p style="color: black; text-align: center;">اضغطوا الاماكن ويوديكم قوقل ماب عشان تشوفون الصور</p>
+            <img src="https://i.pinimg.com/736x/3d/14/bc/3d14bcee3734a2f5b155558e97c74028.jpg" alt="Nature and walks in Edinburgh"/>
+            <p class="list-note">اضغطوا الاماكن ويوديكم قوقل ماب عشان تشوفون الصور</p>
             <ul>
               <li><a href="https://maps.app.goo.gl/sE6LPYCkteqJqtwU6">Water of Leith Walkway - مكان قديم حلو</a></li>
-              <li><a href="https://maps.app.goo.gl/LX4jaw3ydodLU9gC8">Prince Street Gardens - حديقة حلوة</a></li>
+              <li><a href="https://maps.app.goo.gl/LX4jaw3ydodLU9gC8">Princes Street Gardens - حديقة حلوة</a></li>
               <li><a href="https://maps.app.goo.gl/VZorHVyzr5P2eKV3A">Meadow Park - زي هايد بارك</a></li>
               <li><a href="https://maps.app.goo.gl/2cy2mVFhwyw9ehey8">Calton Hill - عواميد</a></li>
               <li><a href="https://maps.app.goo.gl/S8M6raB97ZBfJCgV8">Botanic Gardens - حديقة وكوفيات</a></li>

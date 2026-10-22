@@ -32,4 +32,15 @@ Link: https://irbala.github.io/edinburgh/
 - **HTML5**: Semantic markup for structure.
 - **CSS3**: Custom styles and Tailwind CSS for responsive design.
 - **Tailwind CSS**: For utility-first styling and rapid development.
-- **Google Fonts**: Integrated for consistent typography.
+
+## Styles
+
+- `tailwind.css` is the compiled Tailwind stylesheet the page uses. It's generated, so don't edit it by hand.
+- `style.css` holds the custom styles (colors, lists, navigation).
+
+If you add new Tailwind classes to `index.html`, rebuild `tailwind.css`:
+
+```
+npm install
+npm run build:css
+```
