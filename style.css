@@ -1,12 +1,11 @@
  /* Apply the default font family and navigation spacing */
       body {
         font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
-        padding-top: 60px;
-        margin-top: 50px; /* Adjust based on nav height */
+        padding-top: 60px; /* Leaves room for the fixed navigation bar */
         text-align: center;
       }
 
-      /* Define background styles as reusable classes using local images */
+      /* Hero background image with a dark gradient for readable text */
       .hero-image {
         background-image: linear-gradient(
             0deg,
@@ -14,16 +13,12 @@
             rgba(0, 0, 0, 0) 25%
           ),
           url("https://lh3.googleusercontent.com/aida-public/AB6AXuCo27u0XcJ-aPnFOAO6HVsK2wkV5umVOQEQ0lgd5yXo9KLMVqqz9QqB_OHTJudZ6P2gXXXVoC4xtWa4fKO6dgGkz-UgNhYqSxvVhbtnK9iLPVRlpIfQwc79pRC_2_svyGm0Ht_D5vw9FNJ9HPBjp9Nt6MNiiCPlXAnpn7IY4kkykMOdhjI-sghiotQxGxIWdcJpwFQ7Kq3yjEpfES5zB7Zfiwx6ci-TLWE_5qVYWRaEzswnJfZk8uO2wB97EKRlMU9mPFSLZwo4g5s-");
-        /* Ensure background properties are set */
         background-size: cover;
         background-position: center;
       }
 
       /* Navigation Styles */
-      /* Added margin-top to body content to prevent overlap */
       nav {
-        /* Add a subtle shadow for better visibility when sticky */
-        /* Ensure nav takes full width */
         width: 100%;
       }
 
@@ -74,7 +69,6 @@
         background-color: #716d5a; 
         padding: 10px; /* Add padding for better spacing */
         border-radius: 0.25rem; /* rounded-sm */
-        padding: 10px; /* Add padding for better spacing */
 
         }
 
@@ -101,6 +95,12 @@
         border-radius: 0.25rem; /* rounded-sm */
         box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
         }
+
+      /* Small note above each list */
+      .list-note {
+        color: black;
+        text-align: center;
+      }
 
       /* Style for the place lists */
       .place-list {
