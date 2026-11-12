@@ -1,165 +1,148 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Edinburgh</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-    <link
-      rel="stylesheet"
-      href="style.css"/>
-
-    <!-- Tailwind (compiled, see README) -->
-    <link rel="stylesheet" href="tailwind.css" />
-
-
+    <meta name="description" content="A bilingual Arabic and English guide to Edinburgh: coffee, food, shopping, activities and nature, with a map link for every place." />
+    <title>Edinburgh · ادنبرة</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <nav class="px-4 py-2 fixed top-0 left-0 right-0 bg-white z-50">
+    <!-- Navigation bar (stays at the top while scrolling) -->
+    <nav class="site-nav" aria-label="Sections">
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="#top">Home</a></li>
         <li><a href="#coffee">Coffee</a></li>
-        <li><a href="#Food">Food</a></li>
+        <li><a href="#food">Food</a></li>
         <li><a href="#activities">Activities</a></li>
-        <li><a href="#Nature">Nature</a></li>
+        <li><a href="#nature">Nature</a></li>
       </ul>
     </nav>
 
-    <!-- Main Content Container -->
-    <div class="relative flex size-full min-h-screen flex-col bg-white justify-between group/design-root overflow-x-hidden">
-      <div>
-        <div class="@container">
-          <div class="px-4 py-3 sm:px-4 sm:py-3">
-            <!-- Hero Image Section -->
-            <div class="bg-cover bg-center flex flex-col justify-end overflow-hidden bg-white @[480px]:rounded-lg min-h-80 hero-image">
-              <div class="flex p-4">
-                <h1 class="text-white tracking-light text-[28px] font-bold leading-tight">
-                  Edinburgh 🏴󠁧󠁢󠁳󠁣󠁴󠁿 ادنبرة
-                </h1>
-              </div>
-            </div>
-          </div>
+    <main id="top">
+      <!-- Hero image with the page title -->
+      <header class="hero">
+        <h1>Edinburgh 🏴󠁧󠁢󠁳󠁣󠁴󠁿 <span lang="ar">ادنبرة</span></h1>
+      </header>
+
+      <!-- Coffee & Sweets -->
+      <section id="coffee" class="guide-section section-coffee">
+        <h2>
+          <span>Coffee &amp; Sweets</span>
+          <span lang="ar" dir="rtl">كوفي وحلى</span>
+        </h2>
+        <div class="place-list">
+          <img src="https://i.pinimg.com/736x/14/70/ac/1470acb976b0a59adc7309816ecd8a04.jpg" alt="Coffee and sweets in Edinburgh" loading="lazy">
+          <p class="list-note" lang="ar" dir="rtl">اضغطوا الاماكن ويوديكم قوقل ماب عشان تشوفون الصور</p>
+          <ul>
+            <li><a href="https://maps.app.goo.gl/FEVZ8QKWJkBcfp8P9">Moo Pie Gelato - <span lang="ar">ايسكريم</span></a></li>
+            <li><a href="https://maps.app.goo.gl/hKenXpHEyzBwZoDW9">Mary's Milk Bar - <span lang="ar">ايسكريم</span></a></li>
+            <li><a href="https://maps.app.goo.gl/w4FvjZgTD1t6Qt9Z6">Soft Core - <span lang="ar">ايسكريم</span></a></li>
+            <li><a href="https://maps.app.goo.gl/x6Wevf3YrTXM3ns76">Blank Street - <span lang="ar">قهوه</span></a></li>
+            <li><a href="https://maps.app.goo.gl/vsVxRHPPxkGu2e6fA">Brew Lab Coffee - <span lang="ar">قهوه</span></a></li>
+            <li><a href="https://maps.app.goo.gl/fWW1TC4hnxXDMM7KA">The Artisan Roast <span lang="ar">قهوه</span></a></li>
+            <li><a href="https://maps.app.goo.gl/UKN6XSXWbxb1JJox8">Waterstones - <span lang="ar">كوفي مطل</span></a></li>
+            <li><a href="https://maps.app.goo.gl/g7UccRgW4C7oCyHe6">The Willow Tearooms - <span lang="ar">محل شاهي مطل</span></a></li>
+            <li><a href="https://maps.app.goo.gl/vc5StE8nuB3TupP47">Fudge Kitchen Ltd - <span lang="ar">حلى حلو ورخيص</span></a></li>
+            <li><a href="https://maps.app.goo.gl/48HP894MCCMVoVco9">The Barantine - <span lang="ar">حلى</span></a></li>
+            <li><a href="https://maps.app.goo.gl/2C43kfFt36YLmLa3A">Knoops - <span lang="ar">قهوه وحلى</span></a></li>
+            <li><a href="https://maps.app.goo.gl/yLCZtZQdFJfFdLxD7">The Source - <span lang="ar">قهوه غالية</span></a></li>
+            <li><a href="https://maps.app.goo.gl/eMno9f2R67h6Kjox5">Origin - <span lang="ar">قهوه</span></a></li>
+            <li><a href="https://maps.app.goo.gl/hoMExFkkfKDsbVQj6">Cappuccino - <span lang="ar">كوفي كيوت</span></a></li>
+            <li><a href="https://maps.app.goo.gl/WFpogveVg5i1F8yBA">Chulo's Stuffed Cookies - <span lang="ar">كوكيز لذيذ</span></a></li>
+          </ul>
         </div>
+      </section>
 
-        <!-- Vertical List of Sections -->
-        <div class="flex flex-col gap-6 p-4 pt-4">
-
-               <!-- Coffee Section -->
-          <div id="coffee" class="section-target flex flex-col gap-3">
-            <h3 class="text-xl font-bold ">Coffee & Sweets</h3>
-            <h3 class="text-xl font-bold">كوفي وحلى</h3>
-            <div class="place-list">
-            <img src="https://i.pinimg.com/736x/14/70/ac/1470acb976b0a59adc7309816ecd8a04.jpg" alt="Coffee and sweets in Edinburgh"/>
-            <p class="list-note">اضغطوا الاماكن ويوديكم قوقل ماب عشان تشوفون الصور</p>
-            <ul>
-                <li><a href="https://maps.app.goo.gl/FEVZ8QKWJkBcfp8P9">Moo Pie Gelato - ايسكريم</a></li>
-                <li><a href="https://maps.app.goo.gl/hKenXpHEyzBwZoDW9">Mary's Milk Bar - ايسكريم</a></li>
-                <li><a href="https://maps.app.goo.gl/w4FvjZgTD1t6Qt9Z6">Soft Core - ايسكريم</a></li>
-                <li><a href="https://maps.app.goo.gl/x6Wevf3YrTXM3ns76">Blank Street - قهوه</a></li>
-                <li><a href="https://maps.app.goo.gl/vsVxRHPPxkGu2e6fA">Brew Lab Coffee - قهوه</a></li>
-                <li><a href="https://maps.app.goo.gl/fWW1TC4hnxXDMM7KA">The Artisan Roast قهوه</a></li>
-                <li><a href="https://maps.app.goo.gl/UKN6XSXWbxb1JJox8">Waterstones - كوفي مطل</a></li>
-                <li><a href="https://maps.app.goo.gl/g7UccRgW4C7oCyHe6">The Willow Tearooms - محل شاهي مطل</a></li>
-                <li><a href="https://maps.app.goo.gl/vc5StE8nuB3TupP47">Fudge Kitchen Ltd - حلى حلو ورخيص</a></li>
-                <li><a href="https://maps.app.goo.gl/48HP894MCCMVoVco9">The Barantine - حلى</a></li>
-                <li><a href="https://maps.app.goo.gl/2C43kfFt36YLmLa3A">Knoops - قهوه وحلى</a></li>
-                <li><a href="https://maps.app.goo.gl/yLCZtZQdFJfFdLxD7">The Source - قهوه غالية</a></li>
-                <li><a href="https://maps.app.goo.gl/eMno9f2R67h6Kjox5">Origin - قهوه</a></li>
-                <li><a href="https://maps.app.goo.gl/hoMExFkkfKDsbVQj6">Cappuccino - كوفي كيوت</a></li>
-                <li><a href="https://maps.app.goo.gl/WFpogveVg5i1F8yBA">Chulo's Stuffed Cookies - كوكيز لذيذ</a></li>
-              </ul>
-              </div>
-          </div>
-
-          
-          <!-- Food Section -->
-          <div id="Food" class="section-target flex flex-col gap-3">
-            <h3 class="text-xl font-bold">Food</h3>
-            <h3 class="text-xl font-bold">الاكل</h3>
-            <div class="place-list">
-            <img src="https://i.pinimg.com/736x/71/8c/70/718c707f51c5ae28100d961d8e31dde6.jpg" alt="Food in Edinburgh"/>
-            <p class="list-note">اضغطوا الاماكن ويوديكم قوقل ماب عشان تشوفون الصور</p>
-            <ul>
-                <li><a href="https://maps.app.goo.gl/F7kE7hRWQzC1RRKD9">Dishoom - مطعم هندي</a></li>
-                <li><a href="https://maps.app.goo.gl/zG4vbYPPwedQZ1oF7">Franco Manca - مطعم ايطالي لذيذ</a></li>
-                <li><a href="https://maps.app.goo.gl/JRhC93zCSLY9bK4U6">Lannan Bakery - فطور وكاروسان</a></li>
-                <li><a href="https://maps.app.goo.gl/VdGz7wMZxvWiqRBbA">Beefbar - ستيكات</a></li>
-                <li><a href="https://maps.app.goo.gl/Q7NVbkpyGRqKyPaH7">Sushisamba - مطعم ياباني</a></li>
-                <li><a href="https://maps.app.goo.gl/KXvKJv83Emn3dUTo8">Fat Hippo - برقر</a></li>
-                <li><a href="https://maps.app.goo.gl/Q5mCNgHctZRynvfq8">The Ivy - مطعم بريطاني ديكوره حلو</a></li>
-                <li><a href="https://maps.app.goo.gl/L3m7Mr6jLUzbPTmZ9">Gordon Ramsay Street Burger - مطعم قوردن رامسي</a></li>
-                <li><a href="https://maps.app.goo.gl/LP1h3sn3FnECYJvz5">The Witchery by the Castle - هوتيل اكله حلو</a></li>
-                <li><a href="https://maps.app.goo.gl/hLTDfRc6Ju9ebFp57">The Spence - اكل بحري</a></li>
-                <li><a href="https://maps.app.goo.gl/AvSEK3z1Jw78J6jG6">Little Lardar - فطور</a></li>
-                <li><a href="https://maps.app.goo.gl/eMomJ5gfS6y1sd1FA">Society - فطور غالي</a></li>
-                <li><a href="https://maps.app.goo.gl/8MsnUZxUFrVfdpte8">Laila - مطعم حلال بس لازم حجز</a></li>
-                <li><a href="https://maps.app.goo.gl/Hu3ZcNADVv3u239Y8">o'Oliviero - مطعم ايطالي</a></li>
-            </ul>
-            </div>
-          </div>
-
-     
-
-          <!-- Activities Section -->
-          <div id="activities" class="section-target flex flex-col gap-3">
-            <h3 class="text-xl font-bold">Activities & Shopping</h3>
-            <h3 class="text-xl font-bold">تسوق وفعاليات</h3>
-            <div class="place-list">
-            <img src="https://i.pinimg.com/736x/53/c6/f3/53c6f3d8b3c512224091e4402a0d7c4f.jpg" alt="Shopping streets in Edinburgh"/>
-            <p class="list-note">اضغطوا الاماكن ويوديكم قوقل ماب عشان تشوفون الصور</p>
-            <ul>
-              <li><a href="https://maps.app.goo.gl/mRT24MXwXp7E6npC6">Victoria Street - شارع الالوان</a></li>
-              <li><a href="https://maps.app.goo.gl/svDKMFyjgfghYziYA">Princes Street - شارع مهم ضروري نروح</a></li>
-              <li><a href="https://maps.app.goo.gl/R6UTNFpc52FVtG5r7">Royal Mile Exploration - شارع للتمشية</a></li>
-              <li><a href="https://maps.app.goo.gl/H25KAhc912YAQYxU7">Edinburgh Castle - قصر ادنبره</a></li>
-              <li><a href="https://maps.app.goo.gl/PFyZsP49zC6ZqLHe9">Grassmarket - شارع حلو فيه كوفيات</a></li>
-              <li><a href="https://maps.app.goo.gl/J5CkEn4FuRhNfPbt5">The Edinburgh Dungeon - بيت رعب</a></li>
-              <li><a href="https://maps.app.goo.gl/7FCTx8AnFF5NYiVj8">Camera Obscura - متحف العجائب</a></li>
-              </ul>
-              <p class="list-note">اماكن الشوبنق</p>
-              <ul>
-              <li><a href="https://maps.app.goo.gl/gY3qsKT3842CghMB7">The Enchanted Galaxy - هاري بوتر</a></li>
-              <li><a href="https://maps.app.goo.gl/sRR9QRNV779aBUfW6">House of Treasure - هاري بوتر</a></li>
-              <li><a href="https://maps.app.goo.gl/YwH6XcLtZ8Pq27Wn7">Uniqlo - محل ملابس يمدحونه</a></li>
-              <li><a href="https://maps.app.goo.gl/UFDxhyB8xWvDvuAw5">Royal Mile Factory Outlet - اوتليت بريطاني</a></li>
-              <li><a href="https://maps.app.goo.gl/znxPn6Gbt1z66rPa8">Waterstones - مكتبة وكوفي حلوه للهدايا</a></li>
-              <li><a href="https://maps.app.goo.gl/PW6RmDpNRBZBePyw6">Napiers 1860 - محل شعبي قديم</a></li>
-              <li><a href="https://maps.app.goo.gl/J13ZHz4GHQicJBoE8">Black Moon - محل شموع وصوابين</a></li>
-              <li><a href="https://maps.app.goo.gl/fN5VvwPrjW23jx2WA">Scribbler - محل بطايق</a></li>
-              <li><a href="https://maps.app.goo.gl/PR1PLTxYMkGmm83b6">Cookie - محل هدايا</a></li>
-              <li><a href="https://maps.app.goo.gl/mw4q8oNLfjQ7NgMJ6">Handbag Heaven - اوتليت شنط مستعملة</a></li>
-            </ul>
-            </div>
-          </div>
-
-          <!-- Nature Section -->
-          <div id="Nature" class="section-target flex flex-col gap-3">
-            <h3 class="text-xl font-bold">Nature</h3>
-            <h3 class="text-xl font-bold">طبيعة وتمشية</h3>
-            <div class="place-list">
-            <img src="https://i.pinimg.com/736x/3d/14/bc/3d14bcee3734a2f5b155558e97c74028.jpg" alt="Nature and walks in Edinburgh"/>
-            <p class="list-note">اضغطوا الاماكن ويوديكم قوقل ماب عشان تشوفون الصور</p>
-            <ul>
-              <li><a href="https://maps.app.goo.gl/sE6LPYCkteqJqtwU6">Water of Leith Walkway - مكان قديم حلو</a></li>
-              <li><a href="https://maps.app.goo.gl/LX4jaw3ydodLU9gC8">Princes Street Gardens - حديقة حلوة</a></li>
-              <li><a href="https://maps.app.goo.gl/VZorHVyzr5P2eKV3A">Meadow Park - زي هايد بارك</a></li>
-              <li><a href="https://maps.app.goo.gl/2cy2mVFhwyw9ehey8">Calton Hill - عواميد</a></li>
-              <li><a href="https://maps.app.goo.gl/S8M6raB97ZBfJCgV8">Botanic Gardens - حديقة وكوفيات</a></li>
-              <li><a href="https://maps.app.goo.gl/jVqLBJAqCn5aa46V9">Portobello Beach - شاطيء</a></li>
-              <li><a href="https://maps.app.goo.gl/TRyDxqrLhQuzszin7">Holyrood Park - حديقة قديمة</a></li>
-              <li><a href="https://maps.app.goo.gl/sXvv1HZfee5T2fHp9">Inverleith Park - بحيرة</a></li>
-            </ul>
-            </div>
-          </div>
+      <!-- Food -->
+      <section id="food" class="guide-section section-food">
+        <h2>
+          <span>Food</span>
+          <span lang="ar" dir="rtl">الاكل</span>
+        </h2>
+        <div class="place-list">
+          <img src="https://i.pinimg.com/736x/71/8c/70/718c707f51c5ae28100d961d8e31dde6.jpg" alt="Food in Edinburgh" loading="lazy">
+          <p class="list-note" lang="ar" dir="rtl">اضغطوا الاماكن ويوديكم قوقل ماب عشان تشوفون الصور</p>
+          <ul>
+            <li><a href="https://maps.app.goo.gl/F7kE7hRWQzC1RRKD9">Dishoom - <span lang="ar">مطعم هندي</span></a></li>
+            <li><a href="https://maps.app.goo.gl/zG4vbYPPwedQZ1oF7">Franco Manca - <span lang="ar">مطعم ايطالي لذيذ</span></a></li>
+            <li><a href="https://maps.app.goo.gl/JRhC93zCSLY9bK4U6">Lannan Bakery - <span lang="ar">فطور وكاروسان</span></a></li>
+            <li><a href="https://maps.app.goo.gl/VdGz7wMZxvWiqRBbA">Beefbar - <span lang="ar">ستيكات</span></a></li>
+            <li><a href="https://maps.app.goo.gl/Q7NVbkpyGRqKyPaH7">Sushisamba - <span lang="ar">مطعم ياباني</span></a></li>
+            <li><a href="https://maps.app.goo.gl/KXvKJv83Emn3dUTo8">Fat Hippo - <span lang="ar">برقر</span></a></li>
+            <li><a href="https://maps.app.goo.gl/Q5mCNgHctZRynvfq8">The Ivy - <span lang="ar">مطعم بريطاني ديكوره حلو</span></a></li>
+            <li><a href="https://maps.app.goo.gl/L3m7Mr6jLUzbPTmZ9">Gordon Ramsay Street Burger - <span lang="ar">مطعم قوردن رامسي</span></a></li>
+            <li><a href="https://maps.app.goo.gl/LP1h3sn3FnECYJvz5">The Witchery by the Castle - <span lang="ar">هوتيل اكله حلو</span></a></li>
+            <li><a href="https://maps.app.goo.gl/hLTDfRc6Ju9ebFp57">The Spence - <span lang="ar">اكل بحري</span></a></li>
+            <li><a href="https://maps.app.goo.gl/AvSEK3z1Jw78J6jG6">Little Lardar - <span lang="ar">فطور</span></a></li>
+            <li><a href="https://maps.app.goo.gl/eMomJ5gfS6y1sd1FA">Society - <span lang="ar">فطور غالي</span></a></li>
+            <li><a href="https://maps.app.goo.gl/8MsnUZxUFrVfdpte8">Laila - <span lang="ar">مطعم حلال بس لازم حجز</span></a></li>
+            <li><a href="https://maps.app.goo.gl/Hu3ZcNADVv3u239Y8">o'Oliviero - <span lang="ar">مطعم ايطالي</span></a></li>
+          </ul>
         </div>
-      </div>
-    </div>
-    <!-- Footer Section --> 
-    <footer class="bg-gray-800 text-white text-center py-4">
-      <p class="text-sm">+44 20 7917 3000</p>
- <p class="text-sm">Royal Embassy of Saudi Arabia, London, Primary phone</p>
-      <p class="text-sm">© 2025 Edinburgh Trip. Fay Alabri.</p>  
+      </section>
+
+      <!-- Activities & Shopping -->
+      <section id="activities" class="guide-section section-activities">
+        <h2>
+          <span>Activities &amp; Shopping</span>
+          <span lang="ar" dir="rtl">تسوق وفعاليات</span>
+        </h2>
+        <div class="place-list">
+          <img src="https://i.pinimg.com/736x/53/c6/f3/53c6f3d8b3c512224091e4402a0d7c4f.jpg" alt="Shopping streets in Edinburgh" loading="lazy">
+          <p class="list-note" lang="ar" dir="rtl">اضغطوا الاماكن ويوديكم قوقل ماب عشان تشوفون الصور</p>
+          <ul>
+            <li><a href="https://maps.app.goo.gl/mRT24MXwXp7E6npC6">Victoria Street - <span lang="ar">شارع الالوان</span></a></li>
+            <li><a href="https://maps.app.goo.gl/svDKMFyjgfghYziYA">Princes Street - <span lang="ar">شارع مهم ضروري نروح</span></a></li>
+            <li><a href="https://maps.app.goo.gl/R6UTNFpc52FVtG5r7">Royal Mile Exploration - <span lang="ar">شارع للتمشية</span></a></li>
+            <li><a href="https://maps.app.goo.gl/H25KAhc912YAQYxU7">Edinburgh Castle - <span lang="ar">قصر ادنبره</span></a></li>
+            <li><a href="https://maps.app.goo.gl/PFyZsP49zC6ZqLHe9">Grassmarket - <span lang="ar">شارع حلو فيه كوفيات</span></a></li>
+            <li><a href="https://maps.app.goo.gl/J5CkEn4FuRhNfPbt5">The Edinburgh Dungeon - <span lang="ar">بيت رعب</span></a></li>
+            <li><a href="https://maps.app.goo.gl/7FCTx8AnFF5NYiVj8">Camera Obscura - <span lang="ar">متحف العجائب</span></a></li>
+            <li><a href="https://maps.app.goo.gl/gY3qsKT3842CghMB7">The Enchanted Galaxy - <span lang="ar">هاري بوتر</span></a></li>
+            <li><a href="https://maps.app.goo.gl/sRR9QRNV779aBUfW6">House of Treasure - <span lang="ar">هاري بوتر</span></a></li>
+            <li><a href="https://maps.app.goo.gl/YwH6XcLtZ8Pq27Wn7">Uniqlo - <span lang="ar">محل ملابس يمدحونه</span></a></li>
+            <li><a href="https://maps.app.goo.gl/UFDxhyB8xWvDvuAw5">Royal Mile Factory Outlet - <span lang="ar">اوتليت بريطاني</span></a></li>
+            <li><a href="https://maps.app.goo.gl/znxPn6Gbt1z66rPa8">Waterstones - <span lang="ar">مكتبة وكوفي حلوه للهدايا</span></a></li>
+            <li><a href="https://maps.app.goo.gl/PW6RmDpNRBZBePyw6">Napiers 1860 - <span lang="ar">محل شعبي قديم</span></a></li>
+            <li><a href="https://maps.app.goo.gl/J13ZHz4GHQicJBoE8">Black Moon - <span lang="ar">محل شموع وصوابين</span></a></li>
+            <li><a href="https://maps.app.goo.gl/fN5VvwPrjW23jx2WA">Scribbler - <span lang="ar">محل بطايق</span></a></li>
+            <li><a href="https://maps.app.goo.gl/PR1PLTxYMkGmm83b6">Cookie - <span lang="ar">محل هدايا</span></a></li>
+            <li><a href="https://maps.app.goo.gl/mw4q8oNLfjQ7NgMJ6">Handbag Heaven - <span lang="ar">اوتليت شنط مستعملة</span></a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Nature -->
+      <section id="nature" class="guide-section section-nature">
+        <h2>
+          <span>Nature</span>
+          <span lang="ar" dir="rtl">طبيعة وتمشية</span>
+        </h2>
+        <div class="place-list">
+          <img src="https://i.pinimg.com/736x/3d/14/bc/3d14bcee3734a2f5b155558e97c74028.jpg" alt="Nature and walks in Edinburgh" loading="lazy">
+          <p class="list-note" lang="ar" dir="rtl">اضغطوا الاماكن ويوديكم قوقل ماب عشان تشوفون الصور</p>
+          <ul>
+            <li><a href="https://maps.app.goo.gl/sE6LPYCkteqJqtwU6">Water of Leith Walkway - <span lang="ar">مكان قديم حلو</span></a></li>
+            <li><a href="https://maps.app.goo.gl/LX4jaw3ydodLU9gC8">Princes Street Gardens - <span lang="ar">حديقة حلوة</span></a></li>
+            <li><a href="https://maps.app.goo.gl/VZorHVyzr5P2eKV3A">Meadow Park - <span lang="ar">زي هايد بارك</span></a></li>
+            <li><a href="https://maps.app.goo.gl/2cy2mVFhwyw9ehey8">Calton Hill - <span lang="ar">عواميد</span></a></li>
+            <li><a href="https://maps.app.goo.gl/S8M6raB97ZBfJCgV8">Botanic Gardens - <span lang="ar">حديقة وكوفيات</span></a></li>
+            <li><a href="https://maps.app.goo.gl/jVqLBJAqCn5aa46V9">Portobello Beach - <span lang="ar">شاطيء</span></a></li>
+            <li><a href="https://maps.app.goo.gl/TRyDxqrLhQuzszin7">Holyrood Park - <span lang="ar">حديقة قديمة</span></a></li>
+            <li><a href="https://maps.app.goo.gl/sXvv1HZfee5T2fHp9">Inverleith Park - <span lang="ar">بحيرة</span></a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>+44 20 7917 3000</p>
+      <p>Royal Embassy of Saudi Arabia, London, Primary phone</p>
+      <p>© 2026 Edinburgh Trip. Fay Alabri.</p>
     </footer>
   </body>
 </html>

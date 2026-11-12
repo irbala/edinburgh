@@ -1,46 +1,25 @@
 # Edinburgh Travel Guide
 
-This project is a simple, visually appealing travel guide for Edinburgh, designed to help users explore the city's best coffee shops, food spots, activities, and natural attractions. The website provides a categorized list of places with links (where applicable) and images.
+**Live site:** https://irbala.github.io/edinburgh/
 
-Link: https://irbala.github.io/edinburgh/
+A bilingual (English and Arabic) one-page guide to Edinburgh. Every place links to Google Maps so you can see photos and directions.
 
-## Features
+## Sections
 
-1. **Categories**:
-   - **Coffee & Sweets**: A curated list of cafes and dessert spots in Edinburgh.
-   - **Food**: Recommendations for restaurants and eateries offering diverse cuisines.
-   - **Activities & Shopping**: Explore shopping destinations, cultural landmarks, and fun activities.
-   - **Nature**: Discover parks, gardens, and scenic spots for outdoor enthusiasts.
+- **Coffee & Sweets · كوفي وحلى**
+- **Food · الاكل**
+- **Activities & Shopping · تسوق وفعاليات**
+- **Nature · طبيعة وتمشية**
 
-2. **Navigation**:
-   - A fixed navigation bar allows users to quickly jump to different sections of the page.
+A fixed menu at the top jumps to each section.
 
-3. **Responsive Design**:
-   - Built using Tailwind CSS and custom styles to ensure responsiveness across devices.
+## How it's built
 
-4. **Accessibility**:
-   - Includes hover and focus states for interactive elements to improve user experience.
+- Plain HTML and CSS, with no frameworks, build step or JavaScript
+- `style.css` holds all the styles, with each section's colour set as a variable at the top
+- Fonts: Plus Jakarta Sans for English and Noto Sans Arabic for Arabic
+- The page is English left-to-right, and each piece of Arabic text is marked with `lang="ar"` so browsers and screen readers handle it correctly
 
-5. **Hero Section**:
-   - A visually striking hero image with a gradient overlay introduces users to the theme of the site.
+## Run it locally
 
-6. **Footer**:
-   - Provides contact information and attribution for the project.
-
-## Technologies Used
-
-- **HTML5**: Semantic markup for structure.
-- **CSS3**: Custom styles and Tailwind CSS for responsive design.
-- **Tailwind CSS**: For utility-first styling and rapid development.
-
-## Styles
-
-- `tailwind.css` is the compiled Tailwind stylesheet the page uses. It's generated, so don't edit it by hand.
-- `style.css` holds the custom styles (colors, lists, navigation).
-
-If you add new Tailwind classes to `index.html`, rebuild `tailwind.css`:
-
-```
-npm install
-npm run build:css
-```
+Download or clone the repo and open `index.html` in a browser.
